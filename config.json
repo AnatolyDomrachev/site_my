@@ -9,7 +9,20 @@
 	"mysql":{
 			"host":"localhost",
 			"db":"weather",
+			"col_size":[
+				"50",
+				"500"
+			],
+
 			"tables":{
+				"groups":[
+					"name"
+				],
+				"users":[
+					"name",
+					"group_id",
+					"passwd"
+				],
 				"pages":[
 					"name",
 					"descr"
