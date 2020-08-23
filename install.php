@@ -20,7 +20,7 @@ foreach ($tables as $table => $cols)
 		else
 			$c_size = $size[0];
 
-		$create .= ", $col varchar($c_size)  \n ";
+		$create .= ", $col longblob  \n ";
 	}
 
 	$create .= ") ; \n ";
@@ -35,6 +35,7 @@ foreach ($tables as $table => $cols)
 	echo"\n\n\n";
 }
 
+/*
 $querys[] = "insert into groups (name) values ('admin')";
 $querys[] = "insert into users (name,group_id,passwd) select 'admin' , id , '1111' from groups where name = 'admin'";
 
@@ -50,5 +51,6 @@ foreach ($querys as $query)
 
 	echo"\n\n\n";
 }
+*/
 	 
 ?>

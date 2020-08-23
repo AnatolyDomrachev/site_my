@@ -13,6 +13,8 @@ function connect()
 	    echo "Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 	}
 
+	$mysqli->set_charset("utf8");
+
 	return $mysqli; 
 }
 ?>
