@@ -8,6 +8,7 @@ foreach($menu as $page):
 <p>
 
 <a href="javascript:ftc('pages/<?php echo $page; ?>.php' , 'center' );" > <?php echo $page; ?> </a>
-<a href="javascript:ftc('login.php' , 'login' );" > login </a>
 
 <?php endforeach; ?>
+
+<a href="javascript:ftc('login.php' , 'login' );" > login </a>

@@ -20,6 +20,7 @@
 
 ftc( 'header.php' , 'header' );
 ftc( 'menu.php' , 'menu' );
+ftc( 'login.php' , 'login' );
 ftc( 'center.php' , 'center' );
 
 </script>
