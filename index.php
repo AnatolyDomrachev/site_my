@@ -7,14 +7,11 @@
   </head>
   <body>
 
-<div class = header id = header>
-</div>
-<div class = menu id = menu>
-</div>
-<div class = center id = center>
-</div>
-<div class = footer id = footer>
-</div>
+<div class = header id = header> </div>
+<div class = menu id = menu> </div>
+<div class = login id = login> </div>
+<div class = center id = center> </div>
+<div class = footer id = footer> </div>
 
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="ftc.js"></script>
