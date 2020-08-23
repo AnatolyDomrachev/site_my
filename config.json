@@ -1,8 +1,27 @@
 {
-	"courses":[
+	"menu":[
 		"Python",
 		"C++",
 		"Сети",
 		"Unix"
-	]
+	],
+
+	"mysql":{
+			"host":"localhost",
+			"db":"weather",
+			"tables":{
+				"pages":[
+					"name",
+					"descr"
+				],
+				"posts":[
+					"page_id",
+					"name",
+					"descr"
+				]
+			},
+			"user":"weather",
+			"passwd":"12345"
+		}
 }
+

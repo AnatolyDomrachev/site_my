@@ -9,7 +9,7 @@
 
 <div class = header id = header>
 </div>
-<div class = left id = left>
+<div class = menu id = menu>
 </div>
 <div class = center id = center>
 </div>
@@ -22,7 +22,7 @@
 <script>
 
 ftc( 'header.php' , 'header' );
-ftc( 'left.php' , 'left' );
+ftc( 'menu.php' , 'menu' );
 ftc( 'center.php' , 'center' );
 
 </script>
