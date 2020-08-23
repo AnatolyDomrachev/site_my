@@ -2,7 +2,7 @@
 
 function connect()
 {
-	$config = json_decode(file_get_contents('config.json'));
+	$config = json_decode(file_get_contents(__DIR__ . '/../config.json' ));
 	$host = $config->mysql->host;
 	$user = $config->mysql->user;
 	$password = $config->mysql->passwd;
