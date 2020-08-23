@@ -1,19 +1,9 @@
 <?php
+include 'functions/connect.php';
 
 $config = json_decode(file_get_contents('config.json'));
 
-
-$host = $config->mysql->host;
-$user = $config->mysql->user;
-$password = $config->mysql->passwd;
-$database = $config->mysql->db;
-
-$mysqli = new mysqli($host, $user, $password, $database);
-if ($mysqli->connect_errno) {
-    echo "Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-}
-else
-    echo "Удалось подключиться к MySQL \n" ;
+$mysqli = connect();
 
 $tables = ((array)$config->mysql->tables);
 $size = ((array)$config->mysql->col_size);
