@@ -11,7 +11,12 @@ if($role != 'admin')
 
 <h2> Admin panel </h2>
 <form action = new_page.php method = post>
-<input type = text name = page>
+Page name: 
+<input type = text name = name>
+<p>
+Page descr: 
+<textarea rows="10" cols="75" name = descr>
+</textarea>
 <button> GO </button>
 </form>
 

@@ -11,15 +11,12 @@ if($role != 'admin')
 
 <?php 
 include '../functions/connect.php';
+$name = $_POST['name'];
+$descr = $_POST['descr'];
 $mysqli = connect();
-$query = "select groups.name from groups, users where users.name = 'admin' and  users.passwd = '1111' and groups.id = group_id;";
+$query = "insert into pages (name, descr) values ('$name', '$descr');";
 $result = $mysqli->query($query) ;
 
 if ( !$result) 
     echo "Не удалось выполнить запрос (" . $mysqli->errno . ") " . $mysqli->error;
-
-$row = $result->fetch_assoc();
-print_r( $row);
-
-
 ?>
