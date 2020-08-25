@@ -23,10 +23,8 @@ if($role != 'admin')
 
 <h2> Admin panel </h2>
 
-<a href=all_pages.php > add_page</a>
-<div id = add_page></div>
+<a href=all_pages.php?type=page > add_page</a>
 <p>
-<a href="javascript:ftc('add_post.php' , 'add_post' );" > add_post</a>
-<div id = add_post></div>
+<a href=all_pages.php?type=post > add_post</a>
 
 

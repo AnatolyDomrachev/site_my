@@ -13,7 +13,8 @@
 
 <?php 
 include '../functions/connect.php';
-include '../functions/all_pages.php';
+include '../functions/all_pages_add_page.php';
+include '../functions/all_pages_add_post.php';
 session_start();
 $role = $_SESSION['role'];
 
@@ -25,8 +26,10 @@ if($role != 'admin')
 ?>
 
 <?php 
-
-all_pages(0, 0);
-
+$type = $_GET['type'];
+if($type == 'page')
+	all_pages_add_page(0, 0);
+if($type == 'post')
+	all_pages_add_post(0, 0);
 ?>
 
