@@ -1,14 +1,19 @@
 <?php
 
-$config = json_decode(file_get_contents('config.json'));
-$menu = $config->menu;
-foreach($menu as $page):
+include 'functions/connect.php';
+
+$mysqli = connect();
+$query = "select * from pages;";
+$result = $mysqli->query($query) ;
+if ( !$result) 
+    echo "Не удалось выполнить запрос (" . $mysqli->errno . ") " . $mysqli->error;
+
+while( $row = $result->fetch_assoc()):
 ?>
 
+<?php echo $row['name']."\n" ; ?>
 <p>
 
-<a href="javascript:ftc('pages/<?php echo $page; ?>.php' , 'center' );" > <?php echo $page; ?> </a>
+<?php endwhile; ?>
 
-<?php endforeach; ?>
 
-<a href="javascript:ftc('login.php' , 'login' );" > login </a>
