@@ -38,7 +38,7 @@ foreach ($tables as $table => $cols)
 
 $querys[] = "insert into groups (name) values ('admin')";
 $querys[] = "insert into users (name,group_id,passwd) select 'admin' , id , '1111' from groups where name = 'admin'";
-$querys[] = "insert into pages ( name, parent_id, descr) values ( 'index', '0', 'index');";
+$querys[] = "insert into pages ( name, parent_id, descr) values ( 'index', '0', 'This is index page :)');";
 
 foreach ($querys as $query)
 {
