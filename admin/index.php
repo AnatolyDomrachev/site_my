@@ -7,6 +7,9 @@
   </head>
   <body>
 
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript" src="../ftc.js"></script>
+
 <?php 
 session_start();
 $role = $_SESSION['role'];
@@ -19,14 +22,11 @@ if($role != 'admin')
 ?>
 
 <h2> Admin panel </h2>
-<form action = new_page.php method = post>
-Page name: 
-<input type = text name = name>
+
+<a href="javascript:ftc('add_page.php' , 'add_page' );" > add_page</a>
+<div id = add_page></div>
 <p>
-Page descr: 
-<textarea rows="10" cols="75" name = descr>
-</textarea>
-<button> GO </button>
-</form>
+<a href="javascript:ftc('add_post.php' , 'add_post' );" > add_post</a>
+<div id = add_post></div>
 
 
