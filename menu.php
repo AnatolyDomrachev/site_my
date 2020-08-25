@@ -11,7 +11,12 @@ if ( !$result)
 while( $row = $result->fetch_assoc()):
 ?>
 
-<?php echo $row['name']."\n" ; ?>
+<a href = "javascript:ftc('page.php?page=
+<?php echo $row['name'] ; ?>
+' , 'center' );" > 
+<?php echo $row['name'] ; ?>
+</a>
+
 <p>
 
 <?php endwhile; ?>
