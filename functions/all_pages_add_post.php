@@ -13,7 +13,7 @@ function all_pages_add_post($ppid, $tab)
 <div class = 
 		<?php echo "p".$tab; ?>
 >
-	<a href = "add_post.php?page=<?php echo $row['name'] ; ?>" >
+	<a href = "add_post.php?page=<?php echo $row['id'] ; ?>" >
 	<b>
 		<?php echo $row['name'] ; ?>
 	</b>

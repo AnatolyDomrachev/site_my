@@ -7,6 +7,7 @@ Page name:
 Page descr: 
 <textarea rows="10" cols="75" name = descr>
 </textarea>
+<input type = hidden name = parent value="<?php echo $_GET['page'] ; ?>" >
 <button> GO </button>
 </form>
 
