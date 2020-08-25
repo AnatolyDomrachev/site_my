@@ -9,10 +9,8 @@
 	"mysql":{
 			"host":"localhost",
 			"db":"weather",
-			"col_size":[
-				"50",
-				"500"
-			],
+			"user":"weather",
+			"passwd":"12345",
 
 			"tables":{
 				"groups":[
@@ -25,6 +23,7 @@
 				],
 				"pages":[
 					"name",
+					"parent_id",
 					"descr"
 				],
 				"posts":[
@@ -32,9 +31,7 @@
 					"name",
 					"descr"
 				]
-			},
-			"user":"weather",
-			"passwd":"12345"
+			}
 		}
 }
 

@@ -14,7 +14,9 @@ while( $row = $result->fetch_assoc()):
 <a href = "javascript:ftc('page.php?page=
 <?php echo $row['name'] ; ?>
 ' , 'center' );" > 
+
 <?php echo $row['name'] ; ?>
+
 </a>
 
 <p>
