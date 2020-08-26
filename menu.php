@@ -11,7 +11,7 @@ if ( !$result)
 while( $row = $result->fetch_assoc()):
 ?>
 
-<a href = "javascript:ftc('page.php?page=
+<a href = "javascript:ftc('page.php?id=
 <?php echo $row['id'] ; ?>
 &name=
 <?php echo $row['name'] ; ?>
