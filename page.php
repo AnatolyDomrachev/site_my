@@ -2,8 +2,8 @@
 
 foreach (glob("functions/*.php") as $filename) require_once $filename;
 
-//$pid = $_GET['id'];
-$pid = 4;
+$pid = $_GET['id'];
+//$pid = 4;
 
 $mysqli = connect();
 $query = "select * from pages where id = $pid";
