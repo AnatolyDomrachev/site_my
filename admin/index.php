@@ -24,7 +24,5 @@ if($role != 'admin')
 <h2> Admin panel </h2>
 
 <a href=all_pages.php?type=page > add_page</a>
-<p>
-<a href=all_pages.php?type=post > add_post</a>
 
 

@@ -19,7 +19,7 @@
 <script>
 
 ftc( 'header.php' , 'header' );
-ftc( 'menu.php' , 'menu' );
+ftc( 'page_menu.php?id=1' , 'menu' );
 ftc( 'login.php' , 'login' );
 ftc( 'center.php' , 'center' );
 
