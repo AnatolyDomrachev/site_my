@@ -17,7 +17,12 @@ while( $row = $result->fetch_assoc()):
 <?php echo $row['name'] ; ?>
 &descr=
 <?php echo $row['descr'] ; ?>
-' , 'center' );" > 
+' , 'center' );
+
+javascript:ftc('page_menu.php?id=
+<?php echo $row['id'] ; ?>
+' , 'menu' );
+" > 
 
 <?php echo $row['name'] ; ?>
 

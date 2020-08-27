@@ -1,7 +1,15 @@
-<?php 
+<?php
 
-function get_pages($pid)
+function get_page_menu($pid)
 {
+
+?>
+
+<a href = .>Главная</a>
+<p>
+
+<?php
+
 	$mysqli = connect();
 	$query = "select * from pages where parent_id = $pid";
 	$result = $mysqli->query($query) ;
@@ -10,25 +18,18 @@ function get_pages($pid)
 	while( $row = $result->fetch_assoc()):
 	?>
 
-<div class = p10 >
-
 	<a href = "page.php
-?id= <?php echo $row['id'] ; ?>
-&name= <?php echo $row['name'] ; ?>
-&descr= <?php echo $row['descr'] ; ?>
-" >
+	?id= <?php echo $row['id'] ; ?>
+	&name= <?php echo $row['name'] ; ?>
+	&descr= <?php echo $row['descr'] ; ?>
+	" >
 	<b>
 		<?php echo $row['name'] ; ?>
 	</b>
 	</a>
 
-	<br>
-		<?php 
-if(no_children($pid))
-	echo $row['descr'] ;
- ?>
-	<br>
-</div>
+	<p>
+
 
 	<?php 
 	endwhile;
