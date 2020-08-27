@@ -20,7 +20,7 @@ echo $descr;
 echo "<p>";
 
 $mysqli = connect();
-$query = "insert into posts (name, descr, page_id ) values ( '$name', '$descr', $parent);";
+$query = "insert into pages (name, descr, parent_id ) values ( '$name', '$descr', $parent);";
 echo $query . "\n";
 $result = $mysqli->query($query) ;
 
