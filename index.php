@@ -15,8 +15,9 @@ else
   <body>
 
 <div class = header id = header> </div>
-<div class = menu id = menu> </div>
 <div class = login id = login> </div>
+<div class = path id = path> </div>
+<div class = menu id = menu> </div>
 <div class = center id = center> </div>
 <div class = footer id = footer> </div>
 
@@ -26,6 +27,7 @@ else
 <script>
 
 ftc( 'header.php?pid=<?php echo $pid ; ?>' , 'header' );
+ftc( 'path.php?pid=<?php echo $pid ; ?>' , 'path' );
 ftc( 'page_menu.php?pid=<?php echo $pid ; ?>', 'menu' );
 ftc( 'login.php' , 'login' );
 ftc( 'center.php?pid=<?php echo $pid ; ?>' , 'center' );
