@@ -1,3 +1,10 @@
+<?php 
+if(isset($_GET['pid']))
+	$pid = $_GET['pid'];
+else
+       	$pid = 1;
+?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
@@ -19,7 +26,7 @@
 <script>
 
 ftc( 'header.php' , 'header' );
-ftc( 'page_menu.php?id=1' , 'menu' );
+ftc( 'page_menu.php?pid=<?php echo $pid ; ?>', 'menu' );
 ftc( 'login.php' , 'login' );
 ftc( 'center.php' , 'center' );
 

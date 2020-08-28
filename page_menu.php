@@ -5,7 +5,7 @@
 
 foreach (glob("functions/*.php") as $filename) require_once $filename;
 
-$pid = $_GET['id'];
+$pid = $_GET['pid'];
 
 $mysqli = connect();
 $query = "select name, id from pages where parent_id = $pid;";
@@ -16,13 +16,8 @@ if ( !$result)
 while( $row = $result->fetch_assoc()):
 ?>
 
-<a href = "javascript:ftc('page.php?id=
+<a href = "index.php?pid=
 <?php echo $row['id'] ; ?>
-' , 'center' );
-
-javascript:ftc('page_menu.php?id=
-<?php echo $row['id'] ; ?>
-' , 'menu' );
 " > 
 
 <?php echo $row['name'] ; ?>
