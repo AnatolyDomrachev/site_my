@@ -1,4 +1,6 @@
 <?php
-foreach (glob("functions/*.php") as $filename)
-	require_once $filename;
+$path = [];
+$path[] = 1;
+$path[] = 2;
+print_r($path);
 ?>
