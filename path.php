@@ -13,7 +13,7 @@ get_path($pid, $path);
 foreach($path as $string):
 ?>
 
-<a href = index.php?<?php echo $string[1] ; ?>> <?php echo $string[0] ; ?> / </a>
+<a href = index.php?pid=<?php echo $string[1] ; ?>> <?php echo $string[0] ; ?> / </a>
 
 <?php endforeach; ?>
 
