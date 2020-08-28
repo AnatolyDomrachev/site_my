@@ -5,9 +5,6 @@ function get_page_menu($pid)
 
 ?>
 
-<a href = .>Главная</a>
-<p>
-
 <?php
 
 	$mysqli = connect();
