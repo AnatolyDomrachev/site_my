@@ -28,7 +28,7 @@ else
 ftc( 'header.php' , 'header' );
 ftc( 'page_menu.php?pid=<?php echo $pid ; ?>', 'menu' );
 ftc( 'login.php' , 'login' );
-ftc( 'center.php' , 'center' );
+ftc( 'center.php?pid=<?php echo $pid ; ?>' , 'center' );
 
 </script>
 
